@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>address book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-8nq3OiMMgrVFAHyRMMO+DTfMEciSY+c3Awhj/5ljQ1xck1Uv2BUtMjsjLD8GT5Er" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!--
+            start form
+        -->
+        <div>
+            <form id="address-form-id">
+                <div class="row">
+                    <label for="name-id">Name:</label>
+                    <input type="text" placeholder="name" id="name-id">
+                </div>
+
+
+                <div class="row">
+                    <label for="phone-id">PhoneNumber:</label>
+                    <input type="text" placeholder="phone number" id="phone-id">
+                </div>
+
+                <div>
+                    <input type="submit" class="btn btn-primary" value="save">
+                </div>
+
+
+
+
+            </form>
+        </div>
+        <!--
+            end form
+        -->
+
+        <!--
+           start table
+       -->
+        <div>
+            <table class="table table-sm">
+
+                <thead>
+
+                    <tr>
+                        <th>
+                            #
+                        </th>
+
+                        <th>
+                            Name
+                        </th>
+
+                        <th>
+                            Number
+                        </th>
+
+                        <th>
+                            Edit
+                        </th>
+
+                        <th>
+                            Delete
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+<tbody id="roy-daniel">
+
+</tbody>
+
+            </table>
+        </div>
+        <!--
+    end table.
+-->
+
+
+
+    </div>
+
+    <script type="module"  src="../controller/Bundle.js"></script>
+
+</body>
+
+</html>
