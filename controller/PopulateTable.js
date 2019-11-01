@@ -48,6 +48,7 @@ class PopulateTable {
         aRow.appendChild(tdPhone);
 
         aRow.appendChild(PopulateTable.createBtn('Edit', 'btn btn-success'));
+
         aRow.appendChild(PopulateTable.createBtn('Delete', 'btn btn-danger', anObject["id"]));
         // Messages.Messages.showToast('center', 'saved', 'success');
         return aRow;
