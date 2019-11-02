@@ -1,6 +1,7 @@
-const Address = require('../model/Address.js');
+// const Address = require('../model/Address.js');
+import Address from '../model/Address.js';
 
-class AddressDAO {
+export default class AddressDAO {
 
     constructor() {
         if (AddressDAO.instance) {
@@ -17,9 +18,10 @@ class AddressDAO {
 
 
     static createNewAddress(id, theName, theNumber) {
-        const address = Address.Address.addressCreator(id, theName, theNumber);
-        AddressDAO.addNewAddressToList(address);
+        const address = new Address(id, theName, theNumber);
 
+        // const address = Address.Address.addressCreator(id, theName, theNumber);
+        AddressDAO.addNewAddressToList(address);
         return address;
     }
 
@@ -67,6 +69,6 @@ class AddressDAO {
 
 }
 
-module.exports = {
-    AddressDAO
-}
+// module.exports = {
+//     AddressDAO
+// }

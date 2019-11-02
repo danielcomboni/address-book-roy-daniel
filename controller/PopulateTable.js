@@ -2,18 +2,19 @@
  * @author Roy Comboni.
  */
 
-const contacts = require('../dao/AddressDAOImpl');
-const Messages = require('./Messages')
-const dao = require('../dao/AddressDAOImpl')
+// const contacts = require('../dao/AddressDAOImpl');
+// const Messages = require('./Messages')
+// const dao = require('../dao/AddressDAOImpl')
+import AddressDAOImpl from '../dao/AddressDAOImpl.js';
 
-class PopulateTable {
+export default class PopulateTable {
 
     static createElement(anElement) {
         return document.createElement(anElement);
     }
 
     static deleteAnAddress(id) {
-        contacts.AddressDAOImpl.deleteAnAddress(id);
+        AddressDAOImpl.deleteAnAddress(id);
         document.getElementById(id).remove();
     }
 
@@ -60,6 +61,6 @@ class PopulateTable {
 
 // dao.AddressDAOImpl.printAllAddresses();
 
-module.exports = {
-    PopulateTable
-}
+// module.exports = {
+//     PopulateTable
+// }

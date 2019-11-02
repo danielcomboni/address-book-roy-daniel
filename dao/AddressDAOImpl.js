@@ -1,12 +1,13 @@
-const  AddressDAOCaller =   require( './AddressDAO.js');
+// const  AddressDAOCaller =   require( './AddressDAO.js');
+import AddressDAO from './AddressDAO.js';
 
-class AddressDAOImpl extends AddressDAOCaller.AddressDAO{
+export default class AddressDAOImpl extends AddressDAO{
     
 }
 
-module.exports = {
-    AddressDAOImpl
-}
+// module.exports = {
+//     AddressDAOImpl
+// }
 
 // AddressDAOImpl.createNewAddress('Daniel', '0781');
 // console.log(AddressDAOImpl.getInstance());

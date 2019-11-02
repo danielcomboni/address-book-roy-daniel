@@ -1,5 +1,5 @@
 
-class Address {
+export default class Address {
 
     constructor(id,name, number){
         this.id = id;
@@ -38,6 +38,6 @@ class Address {
 
 
 
-module.exports = {
-    Address
-}
+// module.exports = {
+//     Address
+// }
