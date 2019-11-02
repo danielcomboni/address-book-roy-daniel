@@ -36,8 +36,3 @@ export default class Address {
 
 }
 
-
-
-// module.exports = {
-//     Address
-// }
